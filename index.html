@@ -21,22 +21,22 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Features</a>
-                            <a class="nav-item nav-link" href="login.html">Leaderboard</a>
+                            <a class="nav-item nav-link disabled" href="#">Rewards</a>
+                            <a class="nav-item nav-link disabled" href="login.html">Leaderboard</a>
                             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Help!</a>
                         </div>
                     </div>
                 </nav>
             </div>
-            <div class="card-body">
+            <div class="card-body" id="gameArea">
                 <div class="jumbotron">
                     <h1 class="display-4">Hello, world!</h1>
                     <p class="lead">welcome to Scramble the Game of Words!</p>
                     <hr class="my-4">
                     <p>Have you played before?</p>
                     <p>If not? It is just guessing game. You guess the word to earn points & boom that all about the game. How about giving it a try! I <span class="alert-link">promise</span> it will be a awesome jounrey through the woods of words.</p>
-                    <a class="btn btn-success btn-sm" href="start.html" role="button">Start</a>
-                    <a class="btn btn-info btn-sm" href="#" role="button">Help</a>
+                    <a class="btn btn-success btn-sm" onclick="game()" role="button">Start</a>
+                    <a class="btn btn-info btn-sm" href="help.html" role="button">Help</a>
 
                 </div>
             </div>
@@ -44,7 +44,7 @@
 
             <div class="card-footer">
                 <div class="alert alert-secondary" role="alert">
-                    designed by <a href="#" class="alert-link">Gurjeet</a>
+                    designed by <a href="tel:+1-819-775-5334" class="alert-link">Gurjeet</a>
                 </div>
             </div>
         </div>
@@ -55,6 +55,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
