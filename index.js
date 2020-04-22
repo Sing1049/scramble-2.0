@@ -23,7 +23,7 @@ function game() {
                             </div>
 
                             <div class="btn-group">
-                                <a class="btn btn-outline-danger" id="endBtn" href="#" role="button">End
+                                <a class="btn btn-outline-danger" id="endBtn" onclick="gameOver()" role="button">End
                             <span id="score" class="badge badge-light">0 Score</span>
                             </a>
                                 <a class="btn btn-outline-primary" href="#" id="helpBtn" role="button">Help</a>
@@ -160,7 +160,7 @@ function guess() {
 
 
         } else {
-            if (gameStatus.strikes >= 0 && gameStatus.gameWords.length >= 1) {
+            if (gameStatus.strikes > 0 && gameStatus.gameWords.length >= 1) {
                 if (guessInput.value.toUpperCase() === gameStatus.currentWord.toUpperCase()) {
                     var msg = document.getElementById('msg');
                     msg.innerHTML = `<div class="alert alert-success" role="alert">
